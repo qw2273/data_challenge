@@ -1,10 +1,10 @@
 # Things to look at When You Choosing Notes
 
-![image info](../fig/cover.png)
+![image info](./fig/cover.png)
 
+**This picture show three things to choose when choosing notes: number, grade, term. But in reality, can making investment being so simple?** 
 
-**Results**:
-Please check out the jupyter notebook of the project [Data processing](https://github.com/qw2273/data_challenge/blob/master/lib/2.%20Data%20Processing.ipynb) and [Modeling](https://github.com/qw2273/data_challenge/blob/master/lib/3.%20Modeling.ipynb)
+![These are filters LC provided for investors](./fig/filter.png)
 
 
 **Define the Goal**
@@ -22,14 +22,14 @@ In this project, I worked with the LendingClub data loan, from 2016Q1 to 2017Q4,
 **Prolem Type** 
 classification with 2 classes: "Default" or "Non-default".
 
-**Data clean** 
+**Data Processing** [](https://github.com/qw2273/data_challenge/blob/master/lib/2.%20Data%20Processing.ipynb)
 - Selected attributes that are visible to investors at time of picking notes 
 - Divided attributes into different categories and for each category: check and impute missing values, and plot the distribution and modified some featues like type conversion(like interest rate) , new feature creation(like avg fico score),etc. 
 - Investigated the correlations among the features and between the features and the target variable. 
 - Check features collinarity: Cramér's V to measure of association between categorical variables, and Pearson correlations for numerical ones 
 - For categorical feature with too many levels(like attr_state) , regroup to number of levels
 
-**Model** 
+**Model** [](https://github.com/qw2273/data_challenge/blob/master/lib/3.%20Modeling.ipynb)
 - I trained a gradient boosting model to predict loan defaults and used Cross validation to aviod overfitting. Then I evaluated the models using a cross-validated AUC score on the training set. The returned an AUC score of 0.73 on the test data. 
 - From feature importance analysis, I found that the five most important features are: 
    - loan related: interest rate, loan grade, monthly installment 
