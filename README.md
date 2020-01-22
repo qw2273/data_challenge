@@ -30,7 +30,7 @@ classification with 2 classes: "Default" or "Non-default".
 
 **Model** [Modeling Notebook](https://github.com/qw2273/data_challenge/blob/master/lib/3.%20Modeling.ipynb)
 - I trained a gradient boosting model to predict loan defaults and used Cross validation to aviod overfitting. Then I evaluated the models using a cross-validated AUC score on the training set. The returned an AUC score of 0.73 on the test data. 
-- From feature importance analysis, I found that the five most important features are: 
+- From feature importance analysis, I found that the *five most important features* are 
    - loan related: interest rate, loan grade, monthly installment 
    - borrower related: debt to income ratio , average fico rate 
 
