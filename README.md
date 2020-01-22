@@ -21,14 +21,14 @@ In this project, I worked with the LendingClub data loan, from 2016Q1 to 2017Q4,
 **Prolem Type** 
 classification with 2 classes: "Default" or "Non-default".
 
-**Data Processing** [Data Processing Notebook](https://github.com/qw2273/data_challenge/blob/master/lib/2.%20Data%20Processing.ipynb)
+**Data Processing** [Data Processing Notebook](https://github.com/qw2273/data_challenge/blob/master/lib/Data%20Processing.ipynb)
 - Selected attributes that are visible to investors at time of picking notes 
 - Divided attributes into different categories and for each category: check and impute missing values, and plot the distribution and modified some featues like type conversion(like interest rate) , new feature creation(like avg fico score),etc. 
 - Investigated the correlations among the features and between the features and the target variable. 
 - Check features collinarity: Cramér's V to measure of association between categorical variables, and Pearson correlations for numerical ones 
 - For categorical feature with too many levels(like attr_state) , regroup to number of levels
 
-**Model** [Modeling Notebook](https://github.com/qw2273/data_challenge/blob/master/lib/3.%20Modeling.ipynb)
+**Model** [Modeling Notebook](https://github.com/qw2273/data_challenge/blob/master/lib/Modeling.ipynb)
 - I trained a gradient boosting model to predict loan defaults and used Cross validation to aviod overfitting. Then I evaluated the models using a cross-validated AUC score on the training set. The returned an AUC score of 0.73 on the test data. 
 - From feature importance analysis, I found that the *five most important features* are 
    - *loan-related*: interest rate, loan grade, monthly installment 
