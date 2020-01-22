@@ -1,4 +1,4 @@
-# Things to look at When You Choosing Notes
+# Checklist When You Choose Notes
 
 ![image info](./fig/cover.png)
 
@@ -14,7 +14,6 @@
 - Given this, I decide to limit analysis scope to finding attributes that can be used to identify a "good" loan. 
 
 - I build a predictive model that can predict whether or not a loan will be fully paid or default/charged off, in order to help invesors to avoid potential loan defaulters when pick up notes to minimize the risks of investments. And find the most important factors in assisting investors to make decisions about investing.
-
 
 **Data**:
 In this project, I worked with the LendingClub data loan, from 2016Q1 to 2017Q4, each of which has 150 associated features. 
